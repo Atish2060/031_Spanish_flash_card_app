@@ -8,9 +8,9 @@ dictionary_data = {}
 try:
     data_frame = pandas.read_csv("./data/known_data.csv")
 except FileNotFoundError:
-    data_frame1 = pandas.read_csv("./data/Spanish_English.csv")
-    data_frame1.to_csv("./data/known_data.csv", index= False)
-    dictionary_data = data_frame1.to_dict(orient="records")
+    data_frame2 = pandas.read_csv("./data/Spanish_English.csv")
+    data_frame2.to_csv("./data/known_data.csv", index= False)
+    dictionary_data = data_frame2.to_dict(orient="records")
 else:
     dictionary_data = data_frame.to_dict(orient= "records")
 # print(dictionary_data)
