@@ -23,7 +23,8 @@ def click():
     canvas_img.itemconfig(back_ground_image, image = photo_front)
     canvas_img.itemconfig(text_up, text = "Spanish")
     canvas_img.itemconfig(text_down, text = f"{data_list["Spanish"]}")
-    flip_timer = window.after(3000,change_cards)
+    #flip_timer = window.after(3000,change_cards)
+    flip_timer = window.after(3500,change_cards)
 
 
 #creating the function to change to the English card
